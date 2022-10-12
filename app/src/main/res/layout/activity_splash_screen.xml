@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="@dimen/splashPadding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/ivSplash"
+        android:layout_marginTop="@dimen/textSizeAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/ivSplashHeight"
+        android:src="@drawable/books"/>
+
+    <TextView
+        android:id="@+id/tvSplash"
+        android:layout_marginTop="30dp"
+        android:padding="@dimen/headerPadding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/please_wait"
+        android:fontFamily="serif-monospace"
+        android:textSize="@dimen/textSizeHeader"/>
+
+</LinearLayout>

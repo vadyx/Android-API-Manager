@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".SoundRecorderFragment">
+
+    <!--Heading Text View-->
+    <TextView
+        android:id="@+id/txthead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/nhMarginTop"
+        android:text="@string/audio_recorder"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="130dp"
+        android:layout_weight="1"
+        android:src="@drawable/audio_recorder" />
+
+    <!--This will display the status of our app when
+        we will record some audio and play that audio-->
+    <TextView
+        android:id="@+id/idTVstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/status"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <!--Linear Layout for adding textviews
+        in horizontal manner-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <!--Textview to start audio recording
+            drawableTop will add above mic image-->
+        <TextView
+            android:id="@+id/btnRecord"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@color/purple_700"
+            android:padding="10dp"
+            android:text="@string/start_recording"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            />
+        <!--Textview to stop audio recording
+            drawableTop will add above mic image-->
+        <TextView
+            android:id="@+id/btnStop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/purple_700"
+            android:padding="10dp"
+            android:text="@string/stop_recording"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <!--Textview to play audio that is recorded
+            drawableTop will add above mic image-->
+        <TextView
+            android:id="@+id/btnPlay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@color/purple_700"
+            android:padding="10dp"
+            android:text="@string/play_recording"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+        <!--Textview to pause the play of audio recording
+            drawableTop will add above mic image-->
+        <TextView
+            android:id="@+id/btnStopPlay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/purple_700"
+            android:lines="2"
+            android:padding="10dp"
+            android:text="@string/stop_playing"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

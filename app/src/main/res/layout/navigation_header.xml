@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/books"
+    android:layout_gravity="center_horizontal"
+    android:paddingVertical="@dimen/nhMarginTop"
+    android:layout_width="@dimen/nhWidth"
+    android:layout_height="@dimen/nhHeight"/>

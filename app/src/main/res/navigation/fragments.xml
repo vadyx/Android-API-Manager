@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragments"
+    app:startDestination="@id/menuItems">
+
+    <fragment
+        android:id="@+id/menuItems"
+        android:name="hr.algebra.android_api_manager.ItemsFragment"
+        android:label="@string/items"
+        tools:layout="@layout/fragment_items"/>
+
+    <fragment
+        android:id="@+id/menuSoundRecorder"
+        android:name="hr.algebra.android_api_manager.SoundRecorderFragment"
+        android:label="@string/sound_recorder"
+        tools:layout="@layout/fragment_sound_recorder"/>
+
+    <fragment
+        android:id="@+id/menuAbout"
+        android:name="hr.algebra.android_api_manager.AboutFragment"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about"/>
+
+</navigation>
